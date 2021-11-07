@@ -1,5 +1,4 @@
 Bacteria[] ArrBacteria = new Bacteria[100];
-int foodX=250,foodY = 250;
 void setup() {
   size(500,500);
   background(200);
@@ -14,18 +13,14 @@ void setup() {
 void draw() {
   background(200);
   fill(0);
-  ellipse(foodX,foodY,40,40);
+  ellipse(250,250,40,40);
   for(int i = 0;i < 100;i++) {
-    ArrBacteria[i].food(foodX,foodY);
+    ArrBacteria[i].food(250,250);
     ArrBacteria[i].move();
     ArrBacteria[i].show();
   }
    
 }  
-void mousePressed() {
-  foodX = mouseX;
-  foodY = mouseY;
-}   
 class Bacteria {
   boolean food;
   int myX,myY,foodX,foodY,bacteriaSize,bacteriaSpeed;
