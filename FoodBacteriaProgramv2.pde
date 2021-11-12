@@ -1,7 +1,6 @@
 Bacteria[] ArrBacteria = new Bacteria[100];
 void setup() {
   size(500,500);
-  background(200);
   for(int i = 0;i < 10;i++) {
     for(int j = 0;j < 10;j++) {
       ArrBacteria[10*i+j] = new Bacteria(50*i+25,50*j+25);
